@@ -29,9 +29,6 @@ h1, h2, h3, h4, h5, h6, p {
 .font_bold {
     font-weight: 700;
 }
-.nav_padding {
-    padding-top: 4.5rem;
-}
 .title {
     color: #f2f2f2;
     text-align: center;
@@ -42,8 +39,8 @@ h1, h2, h3, h4, h5, h6, p {
 .elucider {
     height: 15px;
 }
-.padding_nav {
-    min-height: 75rem;
+.nav_padding {
+    min-height: 100vh;
     padding-top: 4.5rem;
 }
 
