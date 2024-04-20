@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* site */
+
+.blue_font {
+    color: #001f30;
+}
+.white_font {
+    color: #f2f2f2;
+}
+body, nav, main, footer {
+    background-color: #001f30;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.font_light {
+    font-weight: 350;
+}
+.font_medium {
+    font-weight: 400;
+}
+.font_bold {
+    font-weight: 700;
+}
+.nav_padding {
+    padding-top: 4.5rem;
+}
+.title {
+    color: #f2f2f2;
+    text-align: center;
+}
+
+/* navbar */
+
+.elucider {
+    height: 15px;
+}
+.padding_nav {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+/* footer */
+
+.logo_footer {
+    height: 40px;
+}
+.elucider_footer {
+    height: 10px;
+}
+.icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+/* input - button */
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #7ccde0;
+    box-shadow: 0 0 0 0.2rem #ccebf3;
+}
+.btn-outline {
+    color: #f2f2f2;
+    background-color: #001f30;
+    border-color: #f2f2f2;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
+    color: #001f30 !important;
+    background-color: #f2f2f2 !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Index */
+
+.proyect {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description {
+    width: 70vw;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    filter: drop-shadow(2px 4px 8px hsla(0deg, 0%, 0%, 0.5))
+}
+.dimension {
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(2px 4px 8px hsla(0deg, 0%, 0%, 0.5))
+}
+.proyect hr {
+    width: 80vw;
+}
+
+/* profesionales */
+
+.card-header,
+.button_color {
+    color: #f2f2f2;
+    background-color: #002E39;
+}
+.card {
+    color: #001f30;
+    background-color: #f2f2f2;
+}
+.button_color:hover {
+    color: #f2f2f2;
+    background-color: #005b73;
+}
+
+/* prestadores - consultorios */
+
+.display_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+}
+.profile {
+    width: 130px;
+}
+.list-group-item {
+    background-color: #f2f2f2;
+}
+
+/* contacto */
+
+.contacto {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.phone {
+    height: 70vh;
+}
+.datos {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* responsive */
+
+@media screen and (min-width: 992px) {
+    .center-x {
+            position: absolute;
+            width: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }  
+}
+@media screen and (max-width: 992px) {
+    .section {
+        flex-direction: column;
+    }
+    .description {
+        margin: 30px;
+        padding: 0px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin: 40px;
+    }
+    .dimension {
+        width: 150px;
+        height: 150px;
+    }
+    .contacto {
+        height: 100%;
+        flex-direction: column;
+    }
+    .phone {
+        height: 30vh;
+    }
+    .datos {
+        width: 90vw;
+    }
+
+}
