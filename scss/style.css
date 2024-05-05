@@ -1,0 +1,363 @@
+body .nav_padding {
+  min-height: 100vh;
+  padding-top: 63px;
+}
+body header nav {
+  background-color: #001f30;
+}
+
+@media screen and (min-width: 992px) {
+  body header nav div div ul {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+footer {
+  background-color: #001f30;
+}
+footer .logo_footer {
+  height: 40px;
+  width: auto;
+}
+footer .elucider_footer {
+  height: 10px;
+  width: auto;
+}
+footer div a {
+  color: #f2f2f2;
+}
+footer div a:hover {
+  transform: scale(1.1, 1.1);
+  transition: transform 0.3s;
+}
+
+.index .banner div {
+  height: 100vh;
+  width: none;
+  background-image: url(../images/lines.png);
+  -webkit-mask: linear-gradient(0deg, transparent, #001f30 15%);
+  display: flex;
+}
+.index .banner div .titulo, .index .banner div .hands {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index .banner div .titulo h1, .index .banner div .hands h1 {
+  font-weight: 700;
+  color: #f2f2f2;
+  font-size: 4rem;
+  padding: 40px;
+}
+.index .banner div .titulo h1 .stroke, .index .banner div .hands h1 .stroke {
+  color: #001f30;
+  -webkit-text-stroke: 1.5px #f2f2f2;
+}
+.index .banner div .titulo img, .index .banner div .hands img {
+  height: 70vh;
+  width: none;
+}
+.index .banner div .scroll {
+  height: 80px;
+  width: none;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.index .test {
+  height: auto;
+  width: 95vw;
+  display: flex;
+  margin: 40px auto;
+}
+.index .test .pruebita {
+  position: relative;
+}
+.index .test .ima {
+  /*nada*/
+}
+.index .test img {
+  height: 400px;
+  width: auto;
+}
+.index .test .torn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.index .test .desc {
+  display: flex;
+  background-color: #f2f2f2;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.index .test .desc h2 {
+  font-weight: 700;
+  margin: 0;
+  color: #001f30;
+}
+.index .test .desc p {
+  font-weight: 350;
+  margin: 0;
+  color: #001f30;
+}
+.index .test .desc div {
+  height: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.index .test .desc div .card {
+  height: none;
+  width: 200px;
+  font-weight: 500;
+  background-color: #fff;
+  color: #001f30;
+}
+.index .about {
+  height: auto;
+  width: 95vw;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin: 40px auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.index .about img {
+  height: 100px;
+  width: 100px;
+  filter: drop-shadow(2px 4px 8px hsla(0, 0%, 0%, 0.5));
+}
+.index .about h2 {
+  font-weight: 700;
+  margin: 0;
+  color: #001f30;
+  text-align: center;
+}
+.index .about p {
+  font-weight: 350;
+  margin: 0;
+  color: #001f30;
+  text-align: center;
+}
+.index .service {
+  height: auto;
+  width: 95vw;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin: 40px auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.index .service img {
+  height: 100px;
+  width: 100px;
+}
+.index .service h2 {
+  font-weight: 700;
+  margin: 0;
+  color: #001f30;
+  text-align: center;
+}
+.index .service p {
+  font-weight: 350;
+  height: auto;
+  width: 90%;
+  margin: 0;
+  color: #001f30;
+  text-align: center;
+}
+.index .service div {
+  height: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.index .service div .card {
+  height: none;
+  width: 200px;
+  font-weight: 500;
+  background-color: #fff;
+  color: #001f30;
+}
+.index hr {
+  height: none;
+  width: 90vw;
+  margin: auto;
+  color: #f2f2f2;
+}
+.index .team {
+  height: auto;
+  width: 95vw;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin: 40px auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.index .team img {
+  height: 100px;
+  width: 100px;
+}
+.index .team h2 {
+  font-weight: 700;
+  margin: 0;
+  color: #001f30;
+  text-align: center;
+}
+.index .team p {
+  font-weight: 350;
+  margin: 0;
+  color: #001f30;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #001f30;
+}
+body main {
+  background-color: #001f30;
+  /* Index */
+  /* profesionales */
+  /* prestadores - consultorios */
+  /* contacto */
+}
+body main .title {
+  color: #f2f2f2;
+  text-align: center;
+}
+body main .proyect {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .section {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .description {
+  width: 70vw;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main .logo {
+  width: 150px;
+  height: 150px;
+  margin: 40px;
+  filter: drop-shadow(2px 4px 8px hsla(0, 0%, 0%, 0.5));
+}
+body main .dimension {
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(2px 4px 8px hsla(0, 0%, 0%, 0.5));
+}
+body main .proyect hr {
+  width: 80vw;
+}
+body main .form-control:focus,
+body main .form-select:focus {
+  border-color: #7ccde0;
+  box-shadow: 0 0 0 0.2rem #ccebf3;
+}
+body main .card-header,
+body main .button_color {
+  color: #f2f2f2;
+  background-color: #002E39;
+}
+body main .card {
+  color: #001f30;
+  background-color: #f2f2f2;
+}
+body main .button_color:hover {
+  color: #f2f2f2;
+  background-color: #005b73;
+}
+body main .display_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body main .profile {
+  width: 130px;
+}
+body main .list-group-item {
+  background-color: #f2f2f2;
+}
+body main .contacto {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body main .phone {
+  height: 70vh;
+}
+body main .datos {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  .section {
+    flex-direction: column;
+  }
+  .description {
+    margin: 30px;
+    padding: 0px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+  }
+  .dimension {
+    width: 150px;
+    height: 150px;
+  }
+  .contacto {
+    height: 100%;
+    flex-direction: column;
+  }
+  .phone {
+    height: 30vh;
+  }
+  .datos {
+    width: 90vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

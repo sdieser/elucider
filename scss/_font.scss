@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@mixin font_weight($weight) {
+    @if $weight == 'light' {
+        font-weight: 350;
+    }
+
+    @else if $weight == 'medium' {
+        font-weight: 500;
+    }
+    
+    @else if $weight == 'bold' {
+        font-weight: 700;
+    }
+}

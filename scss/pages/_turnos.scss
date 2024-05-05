@@ -1,0 +1,66 @@
+.shifts {
+    @include nav_padding (63px);
+
+    .form {
+        @include size (80vh, 90vw);
+        margin: 20px auto;
+        display: flex;
+
+        .title {
+            @include size (100%, 40vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            h1 {
+                @include font-weight ('bold');
+                font-size: 3.5rem;
+                color: $blue;
+                -webkit-text-stroke: 1.5px $white;
+                text-shadow: 3px 3px 1px $white;
+            }
+
+            p {
+                @include font-weight ('light');
+                padding: 20px;
+                color: $white;
+            }
+        }
+
+        .data {
+            @include size (100%, 60vw);
+            color: $white;
+            background-color: $blue;
+            border: $blue-light 1px solid;
+            border-radius: 8px;
+            overflow: auto;
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .shifts {
+    
+        .form {
+            @include size (auto, auto);
+            flex-direction: column;
+            align-items: center;
+    
+            .title {
+                @include size (auto, 95vw);                
+    
+                h1 {
+                    font-size: 2.5rem;
+                    -webkit-text-stroke: 0.5px $white;
+                }
+            }
+    
+            .data {
+                @include size (auto, 95vw);
+            }
+        }
+    }
+}

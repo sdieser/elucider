@@ -1,0 +1,22 @@
+footer {
+    background-color: $blue;
+
+    .logo_footer {
+        @include size (40px, auto)
+    }
+
+    .elucider_footer {
+        @include size (10px, auto)
+    }
+
+    div {
+        a {
+            color: $white;
+            
+            &:hover {
+                transform: scale(1.1,1.1);
+                transition: transform 0.3s;
+            }
+        }
+    }
+}
