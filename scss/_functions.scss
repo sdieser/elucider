@@ -1,9 +1,0 @@
-@mixin nav_padding ($height) {
-    min-height: 100vh;
-    padding-top: $height;
-}
-
-@mixin size ($height, $width) {
-    height: $height;
-    width: $width;
-}

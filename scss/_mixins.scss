@@ -1,0 +1,54 @@
+@mixin nav_padding ($height) {
+    min-height: 100vh;
+    padding-top: $height;
+}
+
+@mixin font_weight ($weight) {
+    @if $weight == 'light' {
+        font-weight: 350;
+    }
+
+    @else if $weight == 'medium' {
+        font-weight: 500;
+    }
+    
+    @else if $weight == 'bold' {
+        font-weight: 700;
+    }
+}
+
+@mixin size ($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin title {
+    @include font-weight ('bold');
+    font-size: 3.5rem;
+    color: $blue;
+    -webkit-text-stroke: 1.5px $white;
+    text-shadow: 2px 2px 1px $white;
+    text-align: center;
+}
+
+@mixin btn_color ($color) {
+    @if $color == 'blue' {
+        color: $white;
+        background-color: $blue;
+        
+        &:hover {
+            color: $white;
+            background-color: $blue-light;
+        }
+    }
+
+    @else if $color == 'white' {
+        color: $blue;
+        background-color: $white;
+        
+        &:hover {
+            color: $white;
+            background-color: $blue-light;
+        }
+    }
+}
